@@ -1,0 +1,18 @@
+{
+  "name": "simpletoast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-env": "^2.4.1",
+    "babel-loader": "^7.1.4",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}

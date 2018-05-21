@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toast Test</title>
+    <style>html,body{margin: 0; padding: 0}</style>
+</head>
+<body>
+
+</body>
+<script src="dist/simpleToast.js"></script>
+<script>
+    window.simpleToast['default'].show('内容xxx');
+
+    setTimeout(function() {
+        window.simpleToast['default'].show('内容222');
+    }, 4000);
+
+    setTimeout(function() {
+        window.simpleToast['default'].show('内容333');
+    }, 8000);
+</script>
+</html>
