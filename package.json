@@ -1,14 +1,19 @@
 {
-  "name": "simpletoast",
+  "name": "js-simple-toast",
   "version": "1.0.0",
-  "description": "",
+  "description": "toast dialog for html",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack",
     "build": "NODE_ENV=production webpack"
   },
-  "author": "",
-  "license": "MIC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeuslfhj/simple-toast"
+  },
+  "email": "zeuslfhj@hotmail.com",
+  "author": "zero",
+  "license": "MIT",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-env": "^2.4.1",
