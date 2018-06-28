@@ -3,9 +3,10 @@ const Toast = {
         const doc = document;
         const toast = doc.createDocumentFragment();
         const ele = doc.createElement('div');
+        const zIndex = this.zIndex || 1000;
         ele.innerHTML = `
             <div class="toast-container"
-                style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: none">
+                style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: ${zIndex}; background-color: rgba(0,0,0,0.5); display: none">
                 <div class="toast-content-container"
                     style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);"
                 >
@@ -18,6 +19,12 @@ const Toast = {
         this.toast = ele.children[0];
         toast.appendChild(this.toast);
         doc.body.appendChild(toast);
+    },
+    setZIndex(zIndex) {
+        this.zIndex = zIndex;
+        if (this.toast) {
+            this.toast.style.zIndex = zIndex;
+        }
     },
     show(msg, duration) {
         if (!this.toast) {

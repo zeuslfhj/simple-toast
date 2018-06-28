@@ -9,6 +9,7 @@
 </body>
 <script src="dist/simpleToast.js"></script>
 <script>
+    window.simpleToast['default'].setZIndex(3000);
     window.simpleToast['default'].show('内容xxx');
 
     setTimeout(function() {
@@ -16,7 +17,8 @@
     }, 4000);
 
     setTimeout(function() {
-        window.simpleToast['default'].show('内容333');
+        window.simpleToast['default'].setZIndex(2000);
+        window.simpleToast['default'].show('内容333', 1000);
     }, 8000);
 </script>
 </html>
