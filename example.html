@@ -6,19 +6,23 @@
 </head>
 <body>
     <div>is real content of website</div>
+    <button id="tip">click for tip</button>
 </body>
 <script src="dist/simpleToast.js"></script>
 <script>
-    window.simpleToast['default'].setZIndex(3000);
-    window.simpleToast['default'].show('内容xxx');
+    // window.simpleToast['default'].setZIndex(3000);
+    // window.simpleToast['default'].show('内容xxx');
 
-    setTimeout(function() {
-        window.simpleToast['default'].show('内容222');
-    }, 4000);
+    // setTimeout(function() {
+    //     window.simpleToast['default'].show('内容222');
+    // }, 4000);
 
-    setTimeout(function() {
-        window.simpleToast['default'].setZIndex(2000);
-        window.simpleToast['default'].show('内容333', 1000);
-    }, 8000);
+    // setTimeout(function() {
+    //     window.simpleToast['default'].setZIndex(2000);
+    //     window.simpleToast['default'].show('内容333', 1000);
+    // }, 8000);
+    document.getElementById('tip').addEventListener('click', function () {
+        window.simpleToast['default'].showTip('show Tip content');
+    })
 </script>
 </html>
